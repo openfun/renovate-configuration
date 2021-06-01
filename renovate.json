@@ -1,0 +1,29 @@
+{
+    "commitMessageAction": "update",
+    "commitMessagePrefix": "⬆️(dependencies)",
+    "commitMessageTopic": "{{depName}}",
+    "enabledManagers": ["npm", "setup-cfg"],
+    "extends": ["config:base"],
+    "labels": ["dependencies"],
+    "packageRules": [
+      {
+        "groupName": "js dependencies",
+        "matchManagers": ["npm"],
+        "schedule": ["before 7am on monday"],
+        "matchPackagePatterns": ["*"]
+      },
+      {
+        "groupName": "python dependencies",
+        "matchManagers": ["setup-cfg"],
+        "schedule": ["before 7am on monday"],
+        "matchPackagePatterns": ["*"]
+      }
+    ],
+    "prConcurrentLimit": 2,
+    "prHourlyLimit": 2,
+    "prCreation": "not-pending",
+    "semanticCommits": "disabled",
+    "separateMajorMinor": false,
+    "updateNotScheduled": true,
+    "rebaseWhen": "behind-base-branch"
+  }
