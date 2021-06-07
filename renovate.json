@@ -21,7 +21,7 @@
     ],
     "prConcurrentLimit": 2,
     "prHourlyLimit": 2,
-    "prCreation": "not-pending",
+    "prCreation": "immediate",
     "semanticCommits": "disabled",
     "separateMajorMinor": false,
     "updateNotScheduled": true,
