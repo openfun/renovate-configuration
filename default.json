@@ -3,7 +3,7 @@
     "commitMessagePrefix": "⬆️(dependencies)",
     "commitMessageTopic": "{{depName}}",
     "dependencyDashboard": false,
-    "enabledManagers": ["npm", "setup-cfg"],
+    "enabledManagers": ["npm", "setup-cfg", "pep621"],
     "extends": ["config:base"],
     "labels": ["dependencies"],
     "packageRules": [
@@ -15,7 +15,7 @@
       },
       {
         "groupName": "python dependencies",
-        "matchManagers": ["setup-cfg"],
+        "matchManagers": ["setup-cfg", "pep621"],
         "schedule": ["before 7am on monday"],
         "matchPackagePatterns": ["*"]
       }
