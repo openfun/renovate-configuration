@@ -2,7 +2,7 @@
     "commitMessageAction": "update",
     "commitMessagePrefix": "⬆️(dependencies)",
     "commitMessageTopic": "{{depName}}",
-    "dependencyDashboard": false,
+    "dependencyDashboard": true,
     "enabledManagers": ["npm", "setup-cfg", "pep621"],
     "extends": ["config:base"],
     "labels": ["dependencies"],
